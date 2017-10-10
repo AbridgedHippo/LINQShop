@@ -40,6 +40,14 @@ namespace LINQShop
                             ShopHandler.CatPriceSort();
                             Console.WriteLine();
                             break;
+                        case '5':
+                            break;
+                        case '6':
+                            break;
+                        case '7':
+                            break;
+                        case '8':
+                            break;
                         case '0':
                             return;
                     }
@@ -48,7 +56,6 @@ namespace LINQShop
         }
         static void Main(string[] args)
         {
-           //test
             //Create a menu and make 
             Menu();
             //calls to ShopHandler for search and sort. 
