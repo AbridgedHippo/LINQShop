@@ -12,7 +12,7 @@ namespace LINQShop
         {
             char c = 'C';
             {
-                while (c != 'x')
+                while (c != '0')
                 {
                     Console.WriteLine
                         (
@@ -41,12 +41,20 @@ namespace LINQShop
                             Console.WriteLine();
                             break;
                         case '5':
+                            ShopHandler.NameSearch();
+                            Console.WriteLine();
                             break;
                         case '6':
+                            ShopHandler.PriceSearch();
+                            Console.WriteLine();
                             break;
                         case '7':
+                            ShopHandler.PnNSearch();
+                            Console.WriteLine();
                             break;
                         case '8':
+                            ShopHandler.CatSelectSearch();
+                            Console.WriteLine();
                             break;
                         case '0':
                             return;
@@ -59,11 +67,11 @@ namespace LINQShop
             //Create a menu and make 
             Menu();
             //calls to ShopHandler for search and sort. 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 
-    
+
     /*  
      Enumerations are special sets of named values 
      which all maps to a set of numbers, usually integers. 
@@ -79,5 +87,8 @@ namespace LINQShop
         Books,
         Sport
     }
+
+
 }
+
 //var ps = new ShopHandler();

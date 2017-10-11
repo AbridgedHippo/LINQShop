@@ -27,11 +27,7 @@ namespace LINQShop
                 new Item{ ID=8,Cat = Category.Books, Name= "Gudfadern", Price = 59.00},
                 new Item{ ID=9,Cat = Category.Books, Name= "Bröderna Lejonhjärta", Price = 71.00},
                 new Item{ ID=10,Cat = Category.Books, Name= "Ta bättre bilder", Price = 150.00},
-                new Item{ ID=11,Cat = Category.Bread, Name= "Hårdbröd", Price = 12.00},
-                //new Item{ ID=12,Cat = Category.Bread, Name= "ABC", Price = 24.00},
-                //new Item{ ID=13,Cat = Category.Bread, Name= "ABC", Price = 21.00},
-                //new Item{ ID=14,Cat = Category.Bread, Name= "BAC", Price = 24.00},
-                //new Item{ ID=15,Cat = Category.Bread, Name= "BAC", Price = 21.00}
+                new Item{ ID=11,Cat = Category.Bread, Name= "Hårdbröd", Price = 12.00}
             };
         }
 
