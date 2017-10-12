@@ -209,37 +209,70 @@ namespace LINQShop
         //foreach (Category c in Enum.GetValues(typesof(Category)))
         //    Console.Write(char.ToString() + " ");
 
+        enum Category { Foods = 1, Drinks = 2, Bread = 3, Books = 4, Sport = 5 }
 
         public static void CatSelectSearch()
         {
+            Category searchCat = Category.Foods;
+            int i = 0;
+            foreach (Category c in Enum.GetValues(typeof(Category)))
+                Console.WriteLine(++i +". " +c.ToString());
 
-            //Category c in Enum.GetValues(typesof(Category));
-            //Console.WriteLine(Category);
+            string strCat = Console.ReadLine();
+            switch (strCat)
+            {
+                case "1":
+                    searchCat = Category.Foods;
+                    break;
+                case "2":
+                    searchCat = Category.Drinks;
+                    break;
+                case "3":
+                    searchCat = Category.Bread;
+                    break;
+                case "4":
+                    searchCat = Category.Books;
+                    break;
+                case "5":
+                    searchCat = Category.Sport;
+                    break;
+                default:
+                    break;
 
-
+            }
         }
-
-        public static void CatStuffs()
-        {
-            //var inventory = new ItemInventory().GetAllItems();
-
-            //string cat = Enum.ToObject(inventory);
-            //Console.WriteLine(cat);
-        }
-        //Use LINQ to query/filter/order/group the items.
-
-        //public static void CatSelectSearch()
-        //{
-        //    var inventory = new ItemInventory().GetAllItems();
-
-        //    var HoldItem =
-        //        from i in inventory
-
-        //}
 
 
 
 
     }
-
 }
+
+
+
+    
+
+    //public static void CatStuffs()
+    //{
+    //var inventory = new ItemInventory().GetAllItems();
+
+    //string cat = Enum.ToObject(inventory);
+    //Console.WriteLine(cat);
+    //}
+    //Use LINQ to query/filter/order/group the items.
+
+    //public static void CatSelectSearch()
+    //{
+    //    var inventory = new ItemInventory().GetAllItems();
+
+    //    var HoldItem =
+    //        from i in inventory
+
+    //}
+
+
+
+
+
+
+
