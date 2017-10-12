@@ -213,9 +213,8 @@ namespace LINQShop
         public static void CatSelectSearch()
         {
 
-            foreach (Category c in Enum.GetValues(typesof(Category)))
-                Console.Write(char.ToString() + " ");
-
+            //Category c in Enum.GetValues(typesof(Category));
+            //Console.WriteLine(Category);
 
 
         }
